@@ -263,4 +263,4 @@ def note(note_id):
     return render_template_string(NOTE_TEMPLATE, content=content.strip() if content else '', note_id=note_id, request=request)
 
 if __name__ == '__main__':
-    app.run(debug=True) 
+    app.run(host = '0.0.0.0', debug=True) 
